@@ -1,0 +1,7 @@
+pandas==0.25.1
+requests==2.22.0
+requests-oauthlib==1.3.0
+tweepy==3.8.0
+unicodecsv==0.14.1
+urllib3==1.24.2
+APScheduler==3.0.0
