@@ -1,5 +1,5 @@
 from apscheduler.schedulers.blocking import BlockingScheduler
-from random import choice
+from random import sample
 import templates
 import word_collections as wc
 import tweepy
@@ -16,7 +16,8 @@ auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
 
 def get_story():
-    sentence = choice(templates.template)
+    sentence = sample(templates.template,1)
+    sentence = str(sentence[0])
     sen_lst = sentence.split()
     placeholder = []
     bracket_ph = ["[","]"]
@@ -28,7 +29,8 @@ def get_story():
             ph=str(ph).replace(bracket,"")
         ph=ph.replace(".","")
         word_lst = wc.collections[ph]
-        word = choice(word_lst)
+        word = sample(word_lst,1)
+        word = str(word[0])
         sentence = sentence.replace(ph,word)
     for bracket in bracket_ph:
         sentence=sentence.replace(bracket,"")
