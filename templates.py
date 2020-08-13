@@ -53,7 +53,7 @@ template = ["The climate is so weird. witnessed [unusual_weather] in chennai tod
 "I wonder if there are any survivors in [country_]",
 "[tamil_proverb]. No wonder the world ended",
 "A survivor warned me not to eat [food_] as [gender_] she beleived it will turn us into [violent_being] ",
-"Witnessed a [country_p] [gender_] manslaughter [gender_] from [cult_]. Hope it doesnt start a war",
+"Witnessed a [country_p] killing a member of the cult, [cult_]. Hope it doesnt start a war",
 "Met a survivor from [tn_place]. They said they walked all the way from there.",
 "Met a survivor from [tn_place]. They said the whole place is now infested with [violent_being] and [post_apoc_waste]",
 "Cooked a new dish with [post_apoc_harvest]",
