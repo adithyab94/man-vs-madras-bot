@@ -18,7 +18,7 @@ template = ["The climate is so weird. witnessed [unusual_weather] in chennai tod
 "Next time I met a person I am going to ask them to join me to [cults_doing_things]",
 "Found a [vehicle_] with full tank. Took it for a spin at [chennai_area]",
 "Remembered this movie - [post_apoc_movie]. Imagine thinking post apocalypse would be anything like that lmao",
-"Remembered about this movie - [movie]. [movie_desc]",
+"Remembered about this movie - [tamil_movie]. [movie_desc]",
 "[cult_] and [cult2] are having a huge party. I can hear them playing [tamil_dance_number]. [ques_engaging]",
 "Danced to [tamil_dance_number] like no one's watching. Hmm actually no one was, there was not a single soul in [chennai_landmark]",
 "Found a [music_instrument]. Played [tamil_song] all day",
