@@ -30,4 +30,19 @@ def timed_job():
     api.update_status(o)
     s.close()
 
+@sched.scheduled_job('interval', hours=6)
+def timed_job2():
+    s=open("samples.txt","r",encoding="utf-8")
+    m=s.readlines()
+    l=[]
+    for i in range(0,len(m)-1):
+        x=m[i]
+        z=len(x)
+        a=x[:z-1]
+        l.append(a)
+    l.append(m[i+1])
+    o=choice(l)
+    api.update_status(o)
+    s.close()
+
 sched.start()
