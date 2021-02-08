@@ -17,22 +17,11 @@ sched = BlockingScheduler()
                     
 @sched.scheduled_job('interval', hours=3)
 def timed_job():
-    s=open("sentences_nt.txt","r",encoding="utf-8")
-    m=s.readlines()
-    l=[]
-    for i in range(0,len(m)-1):
-        x=m[i]
-        z=len(x)
-        a=x[:z-1]
-        l.append(a)
-    l.append(m[i+1])
-    o=choice(l)
-    api.update_status(o)
-    s.close()
-    
-@sched.scheduled_job('interval', hours=6)
-def timed_job():
-    s=open("sentences.txt","r",encoding="utf-8")
+    lot = [1,2]
+    if choice(lot)==1:
+        s=open("sentences_nt.txt","r",encoding="utf-8")
+    else:
+        s=open("sentences.txt","r",encoding="utf-8")
     m=s.readlines()
     l=[]
     for i in range(0,len(m)-1):
